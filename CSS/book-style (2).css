@@ -1,0 +1,82 @@
+ .color {
+      background-color: #bde0fe }
+.bg {
+    background-color: #219ebc; /* สีเทาอ่อน */
+}
+.small-image {
+  width: 300px;  /* ปรับขนาดความกว้างตามต้องการ */
+  height: auto;  /* รักษาอัตราส่วนภาพ */
+}
+  .text {
+  color: #f2f4f3;
+}
+.text-blue {
+  color: #124e78;
+}
+
+
+.con {
+  background-color: #ffffff; /* สีพื้นหลัง */
+  color: #ffffff; /* สีตัวอักษร */
+  font-family: "Prompt", "Sarabun", sans-serif;
+  line-height: 1.8;
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+
+/* ===== หัวข้อใหญ่ ===== */
+#benefit, #taking {
+  color: #124e78;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ===== กล่องแต่ละข้อ (4 สิ่งที่ได้จากเรื่องนี้) ===== */
+.col-7 {
+  background-color: #bde0fe; /* กล่องพื้นหลังสีขาว เพื่อให้อ่านง่าย */
+  color: #124e78;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect เมื่อเอาเมาส์วาง */
+.col-7:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== หัวข้อย่อย (h3) ===== */
+.col-7 h3 {
+  color: #124e78;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* ===== ข้อความย่อหน้าในกล่อง ===== */
+.col-7 p {
+  color: #124e78;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/* ===== ย่อหน้าทั่วไป (ข้างบนสุดของหน้า) ===== */
+.container p {
+  color: #124e78;
+  font-size: 1.05rem;
+}
+
+/* ===== Responsive (มือถือ) ===== */
+@media (max-width: 768px) {
+  .col-7 {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #benefit, #taking {
+    font-size: 1.6rem;
+  }
+}
