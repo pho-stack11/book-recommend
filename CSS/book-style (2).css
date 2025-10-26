@@ -1,5 +1,5 @@
  .color {
-      background-color: #bde0fe }
+      background: linear-gradient(to right, #f8f9fa, #e0e0e0); }
 .bg {
     background-color: #219ebc; /* สีเทาอ่อน */
 }
@@ -7,7 +7,7 @@
   width: 300px;  /* ปรับขนาดความกว้างตามต้องการ */
   height: auto;  /* รักษาอัตราส่วนภาพ */
 }
-  .text {
+  .text1 {
   color: #f2f4f3;
 }
 .text-blue {
@@ -80,3 +80,19 @@
     font-size: 1.6rem;
   }
 }
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
